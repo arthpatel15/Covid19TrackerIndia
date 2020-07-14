@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>COVID-19 India Tracker</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="card-panel blue lighten-1 white-text center-align">
+        <h1 class="flow-text">
+          <i class="large material-icons blue-text">coronavirus</i>
+          COVID-19 Tracker India
+          <i class="large material-icons blue-text">coronavirus</i>
+        </h1>
+
+        <p id="lastUpdated">Last Updated: 08/07/2020 20:03:27</p>
+      </div>
+      <div class="row card-panel center-align z-depth-5">
+        <div class="col s3">
+          <h5>Total</h5>
+          <h5 id="totalCase" class="blue-text">768197</h5>
+          <i class="large material-icons blue-text">note_add</i>
+        </div>
+        <div class="col s3">
+          <h5>Active</h5>
+          <h5 id="active" class="green-text">270481</h5>
+          <i class="large material-icons green-text">sick</i>
+        </div>
+        <div class="col s3">
+          <h5>Recovered</h5>
+          <h5 id="recovered" class="orange-text">476472</h5>
+          <i class="large material-icons orange-text">healing</i>
+        </div>
+        <div class="col s3">
+          <h5>Death</h5>
+          <h5 id="death" class="red-text">21744</h5>
+          <i class="large material-icons red-text">stop_circle</i>
+        </div>
+      </div>
+      <table class="highlight responsive-table border">
+        <thead>
+          <tr class="teal lighten-2">
+            <th class="center">State</th>
+            <th>Total Case</th>
+            <th>Active</th>
+            <th>Recovered</th>
+            <th>Death</th>
+          </tr>
+        </thead>
+
+        <tbody id="mydata"></tbody>
+      </table>
+      <footer class="page-footer footer-copyright center">
+        © 2020 - Arth Patel / Source: covid19india.org
+      </footer>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
